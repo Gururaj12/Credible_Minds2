@@ -2,6 +2,10 @@ package in.wexos.varun.credible_minds;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -10,15 +14,59 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import in.wexos.varun.credible_minds.model.Contact;
 
 public class Contactus extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMarkerDragListener, GoogleMap.OnMapLongClickListener {
 
     private GoogleMap mMap;
+    private FirebaseAuth firebaseAuth;
+    private DatabaseReference databaseReference;
+
+    EditText name,website,email,phone,message;
+    Button save;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactus);
+        name= (EditText) findViewById(R.id.name);
+        website= (EditText) findViewById(R.id.website);
+        email= (EditText) findViewById(R.id.email);
+        phone= (EditText) findViewById(R.id.phone);
+        message= (EditText) findViewById(R.id.msg);
+        firebaseAuth = FirebaseAuth.getInstance();
+        save= (Button) findViewById(R.id.btnLinkToRegisterScreen);
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String nam = name.getText().toString().trim();
+                String web = website.getText().toString().trim();
+                String ema = email.getText().toString().trim();
+                String phn = phone.getText().toString().trim();
+                String msgg = message.getText().toString().trim();
+
+                //creating a userinformation object
+                Contact userInformation = new Contact(nam, web, ema, phn, msgg);
+
+                //getting the current logged in user
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+
+
+                databaseReference.child(user.getUid()).setValue(userInformation);
+
+                //displaying a success toast
+                Toast.makeText(getApplicationContext(),"Please enter email",Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);

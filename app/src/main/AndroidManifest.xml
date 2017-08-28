@@ -52,7 +52,8 @@
         <activity android:name=".IphoneDevelopment" />
         <activity android:name=".Login" />
         <activity android:name=".Ourservices" />
-        <activity android:name=".Register" />
+        <activity android:name=".Register"></activity>
+
         <activity android:name=".Test" />
         <activity android:name=".Training" />
         <activity android:name=".Videoplay" />

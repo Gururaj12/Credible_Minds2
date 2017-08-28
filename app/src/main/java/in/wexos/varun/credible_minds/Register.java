@@ -59,8 +59,8 @@ public class Register extends AppCompatActivity {
                     return;
                 }
 
-                progressDialog.setMessage("Registering Please Wait...");
-                progressDialog.show();
+                //progressDialog.setMessage("Registering Please Wait...");
+              //  progressDialog.show();
                 //creating a new user
                 auth.createUserWithEmailAndPassword(emails, password)
                         .addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
@@ -74,7 +74,7 @@ public class Register extends AppCompatActivity {
                                     //display some message here
                                     Toast.makeText(Register.this,"Registration Error",Toast.LENGTH_LONG).show();
                                 }
-                                progressDialog.dismiss();
+                               // progressDialog.dismiss();
                             }
                         });
 
