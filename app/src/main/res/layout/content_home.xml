@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+
+                        android:elevation="4dp"
+                        android:translationZ="5dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardElevation="20sp"
+                        app:cardBackgroundColor="#7df27b"
+                        android:id="@+id/video_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:onClick="video"
+                        android:padding="5sp" >
+
+                        <TextView
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Online Training"
+                        android:layout_gravity="center|bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:padding="20dp"
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/videoplayer1" />
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/interview_card"
+                        android:elevation="4dp"
+                        android:translationZ="5dp"
+                        app:cardElevation="20sp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardBackgroundColor="#42ddcb"
+                        android:onClick="interview"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:padding="5sp" >
+
+                        <TextView
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="  Interview\n Questions"
+                        android:layout_gravity="center|bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:padding="20dp"
+                            android:src="@drawable/inter" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/quiz_card"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardBackgroundColor="#5fa5ef"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        app:cardElevation="20sp"
+                        android:onClick="quiz"
+                        android:padding="5sp">
+
+                        <ImageView
+                            android:padding="20dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/quiz123"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginBottom="5dp"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="Quiz"
+                            android:textStyle="bold" />
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/technical_card"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardBackgroundColor="#ede74b"
+                        android:onClick="technical"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        app:cardElevation="20sp"
+                        android:padding="5sp" >
+
+                        <ImageView
+                            android:padding="20dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/technical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_marginBottom="5dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Technical\n   Terms"
+                            android:layout_gravity="center|bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/training_card"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardBackgroundColor="#f2906f"
+                        android:onClick="training"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:cardElevation="20sp"
+                        android:layout_weight="1"
+                        android:padding="5sp" >
+
+                        <ImageView
+                            android:padding="20dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/training"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_marginBottom="5dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Training Courses"
+                            android:layout_gravity="center|bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/study_card"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardBackgroundColor="#a0cef7"
+                        android:onClick="study"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        app:cardElevation="20sp"
+                        android:padding="5sp" >
+
+
+                        <TextView
+                            android:layout_marginBottom="5dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Study Materials"
+                            android:layout_gravity="center|bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:padding="20dp"
+                            android:src="@drawable/study" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/contact_card"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardBackgroundColor="#d66459"
+                        android:onClick="contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:cardElevation="20sp"
+                        android:layout_weight="1"
+                        android:padding="5sp" >
+
+                        <ImageView
+                            android:padding="20dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/contactnew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_marginBottom="5dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Contact Us"
+                            android:layout_gravity="center|bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/service_card"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:cardBackgroundColor="#f495b6"
+                        android:onClick="sevice"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        app:cardElevation="20sp"
+                        android:padding="5sp" >
+
+                        <ImageView
+                            android:padding="20dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/ourservice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_marginBottom="5dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Our Services"
+                            android:layout_gravity="center|bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </android.support.v7.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/about_card"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="#86aa11"
+                    android:onClick="about_us"
+                    app:cardElevation="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:padding="5sp" >
+
+
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="About Us"
+                        android:layout_gravity="center|bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="20dp"
+                        android:src="@drawable/aboutnew" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+                <View
+                    android:background="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"></View>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

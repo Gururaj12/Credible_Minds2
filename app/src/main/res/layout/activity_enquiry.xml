@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.wexos.varun.credible_minds.Enquiry">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:textColor="@android:color/black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white"
+            android:hint="Name"
+            android:padding="10dp"
+            android:singleLine="true"/>
+
+        <EditText
+            android:background="@android:color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:padding="10dp"
+            android:singleLine="true" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white"
+            android:hint="Phone"
+            android:padding="10dp"
+            android:singleLine="true" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white"
+            android:hint="Course"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="135dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white"
+            android:hint="Message"
+            android:padding="10dp"
+            android:singleLine="true" />
+        <Button
+            android:layout_marginBottom="15dp"
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#aae6f7"
+            android:text="Send Message"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

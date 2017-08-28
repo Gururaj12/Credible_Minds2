@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "417267321717",
+    "firebase_url": "https://credibleminds2.firebaseio.com",
+    "project_id": "credibleminds2",
+    "storage_bucket": "credibleminds2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417267321717:android:842a278c1bff977b",
+        "android_client_info": {
+          "package_name": "in.wexos.varun.credible_minds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417267321717-nu78lbusk63m38bm8lfui9tt47n18mq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.wexos.varun.credible_minds",
+            "certificate_hash": "70d3060a1dad0ccf4cab499f0aa3335f32ba9894"
+          }
+        },
+        {
+          "client_id": "417267321717-t8h5g5hdd75k61j70kvm08qkngdmo9ok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDJRlyMXrCYzBggjZ6M8oEcAedvhPHAmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417267321717-t8h5g5hdd75k61j70kvm08qkngdmo9ok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

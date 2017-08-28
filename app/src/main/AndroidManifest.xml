@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.wexos.varun.credible_minds">
+
+    <!--
+        The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+        Google Maps Android API v2, but you must specify either coarse or fine
+        location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+         The API key for Google Maps-based APIs is defined as a string resource.
+         (See the file "res/values/google_maps_api.xml").
+         Note that the API key is linked to the encryption key used to sign the APK.
+         You need a different API key for each encryption key, including the release key that is used to
+         sign the APK for publishing.
+         You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".About_Us" />
+        <activity android:name=".AndroidDevelopment" />
+        <activity android:name=".Contactus" />
+        <activity android:name=".Flash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Informatica" />
+        <activity android:name=".IphoneDevelopment" />
+        <activity android:name=".Login" />
+        <activity android:name=".Ourservices" />
+        <activity android:name=".Register" />
+        <activity android:name=".Test" />
+        <activity android:name=".Training" />
+        <activity android:name=".Videoplay" />
+        <activity android:name=".WebDevelopment" />
+        <activity android:name=".Websitedesign" />
+        <activity android:name=".Interview_Questions.Big_Data_Interview" />
+        <activity android:name=".Interview_Questions.Data_warehouse_Interview" />
+        <activity android:name=".Interview_Questions.Dot_net_Interview" />
+        <activity android:name=".Interview_Questions.Java_Script_Interview" />
+        <activity android:name=".Interview_Questions.Main2Activity" />
+        <activity android:name=".Interview_Questions.MainActivity" />
+        <activity android:name=".Interview_Questions.Oracle_Interview" />
+        <activity android:name=".Interview_Questions.Sap_Interview" />
+        <activity android:name=".Interview_Questions.Testing_Interview" />
+        <activity android:name=".Interview_Questions.Web_Technology_Interview" />
+        <activity android:name=".Quiz.Big_Data" />
+        <activity android:name=".Quiz.ConceptActivity" />
+        <activity android:name=".Quiz.Data_WareHouse" />
+        <activity android:name=".Quiz.Devops" />
+        <activity android:name=".Quiz.Main2Activity_Quiz" />
+        <activity android:name=".Quiz.Oracle" />
+        <activity android:name=".Quiz.ResultActivity" />
+        <activity android:name=".Quiz.Sap" />
+        <activity android:name=".Quiz.Software" />
+        <activity android:name=".Quiz.ViewAnswerActivity" />
+        <activity android:name=".Quiz.Web" />
+        <activity android:name=".Study.Big_Data_Study" />
+        <activity android:name=".Study.Data_warehouse_Study" />
+        <activity android:name=".Study.Dot_net_Study" />
+        <activity android:name=".Study.Java_Script" />
+        <activity android:name=".Study.Java_Study" />
+        <activity android:name=".Study.MainActivity_Study" />
+        <activity android:name=".Study.Big_data_study.Big_data_tutorials" />
+        <activity android:name=".Study.Big_data_study.Big_tpoint" />
+        <activity android:name=".Study.Big_data_study.Big_tutorials_point" />
+        <activity android:name=".Study.Data_warehouse_study.Data_warehouse_tutorials" />
+        <activity android:name=".Study.Data_warehouse_study.Data_warehouse_tutorials_point" />
+        <activity android:name=".Study.Dot_net_study.Dot_net_tpoint" />
+        <activity android:name=".Study.Dot_net_study.Dot_net_tutorials" />
+        <activity android:name=".Study.Dot_net_study.Dot_net_tutorials_point" />
+        <activity android:name=".Study.Java_script_study.Java_script_tutorials_point" />
+        <activity android:name=".Study.Java_script_study.JavaScript_tpoint" />
+        <activity android:name=".Study.Java_script_study.JavaScript_w3school" />
+        <activity android:name=".Study.Java_study.Java_tpoint" />
+        <activity android:name=".Study.Java_study.Java_tutorials_point" />
+        <activity android:name=".Study.Java_study.Java_w3schools" />
+        <activity android:name=".Study.Oracle_study.Oracle_tpoint" />
+        <activity android:name=".Study.Oracle_study.Oracle_tutorials" />
+        <activity android:name=".Study.Oracle_study.Oracle_tutorials_point" />
+        <activity android:name=".Study.Sap_study.Sap_tutorials" />
+        <activity android:name=".Study.Sap_study.Sap_tutorials_online" />
+        <activity android:name=".Study.Sap_study.Sap_tutorials_point" />
+        <activity android:name=".Study.Testing_study.Testing_tutorials" />
+        <activity android:name=".Study.Testing_study.Testing_tutorials_online" />
+        <activity android:name=".Study.Testing_study.Testing_tutorials_point" />
+        <activity android:name=".Study.Web_technology_study.Web_tpoint" />
+        <activity android:name=".Study.Web_technology_study.Web_tutorials_point" />
+        <activity android:name=".Study.Web_technology_study.Web_w3school" />
+        <activity android:name=".Technical_Terms.asp_net_terms" />
+        <activity android:name=".Technical_Terms.Big_terms" />
+        <activity android:name=".Technical_Terms.data_warehouse_terms" />
+        <activity android:name=".Technical_Terms.java_script_terms" />
+        <activity android:name=".Technical_Terms.Java_terms" />
+        <activity android:name=".Technical_Terms.MainActivity_Terms" />
+        <activity android:name=".Technical_Terms.oracle_terms" />
+        <activity android:name=".Technical_Terms.sap_terms" />
+        <activity android:name=".Technical_Terms.Software_terms" />
+        <activity android:name=".Technical_Terms.web_terms" />
+        <activity android:name=".Training_terms.Big_training" />
+        <activity android:name=".Training_terms.Data_warehouse_training" />
+        <activity android:name=".Training_terms.Java_training" />
+        <activity android:name=".Training_terms.Microsoft_training" />
+        <activity android:name=".Training_terms.Oracle_training" />
+        <activity android:name=".Training_terms.Testing_training" />
+        <activity android:name=".Training_terms.Web_training" />
+        <activity android:name=".Training_terms.Sap_training" />
+        <activity android:name=".Study.Oracle_Study" />
+        <activity android:name=".Study.Sap_Study" />
+        <activity android:name=".Study.Testing_Study" />
+        <activity android:name=".Study.Web_Technology_Study" />
+        <activity android:name=".Enquiry" />
+        <activity android:name=".Share"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+package in.wexos.varun.credible_minds;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.CardView;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+
+public class AndroidDevelopment extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_android_development);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.swing_up_left);
+        CardView anim= (CardView) findViewById(R.id.card_android);
+        anim.startAnimation(animation);
+    }
+}

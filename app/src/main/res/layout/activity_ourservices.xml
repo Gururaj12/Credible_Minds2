@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Ourservices">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:text="Our Services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:background="#f495b6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <Button
+        android:stateListAnimator="@anim/animation"
+        android:background="#f495b6"
+        android:id="@+id/website_service"
+        android:layout_margin="25dp"
+        android:text="Website Designing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2sp"
+        android:onClick="websitedesign"/>
+        <Button
+            android:id="@+id/web_development_service"
+            android:stateListAnimator="@anim/animation"
+            android:background="#f495b6"
+            android:layout_margin="25dp"
+            android:onClick="website"
+            android:text="Website Development"
+            android:layout_width="match_parent"
+            android:padding="10sp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/android_service"
+            android:stateListAnimator="@anim/animation"
+            android:background="#f495b6"
+            android:onClick="android"
+            android:text="Android Application development"
+            android:layout_width="match_parent"
+            android:padding="2sp"
+            android:layout_margin="25dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/iphone_service"
+            android:stateListAnimator="@anim/animation"
+            android:background="#f495b6"
+            android:onClick="iphone"
+            android:text="Iphone Application Development"
+            android:layout_width="match_parent"
+            android:padding="10sp"
+            android:layout_margin="25dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+
+            android:stateListAnimator="@anim/animation"
+            android:background="#f495b6"
+            android:onClick="informatica"
+            android:id="@+id/etl_service"
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:layout_margin="25dp"
+            android:layout_height="wrap_content"
+            android:text="ETL/DWH/BI" />
+
+
+        <Button
+            android:stateListAnimator="@anim/animation"
+            android:background="#f495b6"
+            android:onClick="testing"
+            android:id="@+id/testing_service"
+            android:layout_width="match_parent"
+            android:padding="2dp"
+            android:layout_margin="25dp"
+            android:layout_height="wrap_content"
+            android:text="Testing" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

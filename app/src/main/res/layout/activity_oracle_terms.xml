@@ -1,0 +1,556 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="@string/oracle_terms_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_big_1"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/oracle_term_a"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_2"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_b_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="@string/oracle_term_b_2"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_3"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="15dp"
+                        android:text="@string/oracle_term_c_1"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_c_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_4"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_d_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_d_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_testing_5"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_e_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_e_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_6"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_f_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_f_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_7"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_g_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_g_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_8"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="15dp"
+                        android:text="@string/oracle_term_h_1"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_h_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_9"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_i_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_i_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_10"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_j_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_j_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_11"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_k_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_k_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_12"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_l_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_l_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_13"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_m_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_m_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_14"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/oracle_term_n_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_n_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/cardview_big_15"
+                card_view:cardBackgroundColor="#f9ddca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:textColor="#000000"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_o_1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oracle_term_o_2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
