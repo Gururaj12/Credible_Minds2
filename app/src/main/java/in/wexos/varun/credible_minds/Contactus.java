@@ -60,7 +60,7 @@ public class Contactus extends FragmentActivity implements OnMapReadyCallback, G
                 databaseReference.child(user.getUid()).setValue(userInformation);
 
                 //displaying a success toast
-                Toast.makeText(getApplicationContext(),"Please enter email",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Data Stored",Toast.LENGTH_LONG).show();
 
             }
         });

@@ -16,6 +16,7 @@
         android:paddingRight="20dp">
 
         <EditText
+            android:id="@+id/name"
             android:textColor="@android:color/black"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -26,6 +27,7 @@
             android:singleLine="true"/>
 
         <EditText
+            android:id="@+id/email_id"
             android:background="@android:color/white"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -34,6 +36,7 @@
             android:padding="10dp"
             android:singleLine="true" />
         <EditText
+            android:id="@+id/phone_number"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -42,6 +45,7 @@
             android:padding="10dp"
             android:singleLine="true" />
         <EditText
+            android:id="@+id/course"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -51,6 +55,7 @@
             android:singleLine="true" />
 
         <EditText
+            android:id="@+id/message"
             android:layout_width="fill_parent"
             android:layout_height="135dp"
             android:layout_marginBottom="10dp"

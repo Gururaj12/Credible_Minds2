@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class Login extends AppCompatActivity {
-    Button login, button1;
+    Button login,guest, button1;
     EditText email,pswd;
     private FirebaseAuth auth;
 
@@ -31,6 +31,14 @@ public class Login extends AppCompatActivity {
         email= (EditText) findViewById(R.id.et_name);
         pswd= (EditText) findViewById(R.id.et_email);
         login = (Button)findViewById(R.id.login);
+        guest= (Button) findViewById(R.id.guest);
+        guest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Login.this,Guest.class);
+                startActivity(intent);
+            }
+        });
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
